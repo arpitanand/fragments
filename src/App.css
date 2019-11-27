@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -19,4 +20,67 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+/*Order item*/
+.order-item {
+  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.order-item .title {
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  color: #222222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.order-item .subtitle {
+  font-size: calc(10px + 1vmin);
+  font-weight: normal;
+  color: #555555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.order-item .text {
+  font-size: calc(10px + 2vmin);
+  font-weight: normal;
+  color: #222222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.order-item .counter {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.order-item .counter button {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.order-item + .order-item {
+  border-top: 1px solid #f0f9fb;
 }
